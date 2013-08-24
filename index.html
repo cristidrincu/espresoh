@@ -1,9 +1,132 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title></title>
+    <title>espresoh</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- GOOGLE FONTS -->
+    <link href='http://fonts.googleapis.com/css?family=Raleway:300' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:700, 300italic, 600' rel='stylesheet' type='text/css'>
+    <!--<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic' rel='stylesheet' type='text/css'>-->
+    <!--<link href='http://fonts.googleapis.com/css?family=Open+Sans:600' rel='stylesheet' type='text/css'>-->
+
+    <!--bootstrap css-->
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+
+    <!--custom css and javascript files-->
+    <link rel="stylesheet" href="assets/css/styles.css"/>
 </head>
 <body>
+    <!-- preloader container -->
+    <div class="container_preloader">
 
+    </div>
+
+    <!-- main content container HOME PAGE-->
+    <div class="container" id="home_page_container">
+        <div class="row">
+            <!-- MAIN SECTIONS LOGO AND TEXT CONTAINER-->
+            <!-- HOME SECTION-->
+            <div class="col-lg-10">
+                <div class="logo_container logo_position_home">
+                    <a href="#" target="_self"><img src="assets/imgs/logo.png" alt="espresoh"/></a>
+                </div>
+                <div class="teaser_text container_teaser_home">
+                    <p class="text_home">Freshly brewed code delivered daily.</p>
+                </div>
+                <!--nav arrow-->
+                <div class="col-lg-12 container_arrow_nav">
+                    <a href="#"><img id="arrow_nav_home_page" src="assets/imgs/arrow_nav.png"/></a>
+                </div>
+            </div>
+            <!--MAIN MENU SECTION - WILL NOT SUFFER POSITION MODIFICATIONS ON OTHER PAGES - position: fixed-->
+            <div class="col-lg-2">
+                <div class="container_main_menu">
+                    <ul>
+                        <li><a id="linkHomeSection" class="activeLinkMainMenu" href="#home">HOME</a></li>
+                        <li>
+                            <div>
+                                <a id="triggerSubMenu" href="#about_us">ABOUT US</a>
+                                <div class="containerSubMenu">
+                                    <ul>
+                                        <li><a href="#">Stats</a></li>
+                                        <li><a href="#">What We Do</a></li>
+                                        <li><a href="#">Team</a></li>
+                                        <li><a href="#">Office</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a class="activeLinkMainMenu" href="#">CAREERS</a></li>
+                        <li><a class="activeLinkMainMenu" href="#">CONTACT</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div><!--ends main content container for HOME PAGE-->
+
+    <!---------------------------------------------------->
+    <!----------------ABOUT US MAIN PAGE STARTS HERE------>
+
+    <!-- main content container ABOUT US------------------>
+    <div class="container" id="about_us_page_container">
+        <div class="row">
+            <div class="col-lg-10">
+                <div class="logo_container logo_position_about_us">
+                    <a href="#" target="_self"><img src="assets/imgs/logo.png" alt="espresoh"/></a>
+                </div>
+                <div class="teaser_text container_teaser_about_us">
+                    <p class="text_about_us">is a digital web development start-up, creating amazing success stories with our client every day.</p>
+                </div>
+                <div class="container_icons_about_us">
+                     <ul>
+                         <li id="toggleStatsText">
+                            <img src="assets/imgs/stats_icon.png"/>
+                         </li>
+                         <li id="toggleWhatWeDoText">
+                            <img src="assets/imgs/what_we_do_icon.png"/>
+                         </li>
+                         <li id="toggleTeamText">
+                            <img src="assets/imgs/team_icon.png"/>
+                         </li>
+                         <li id="toggleOfficeText">
+                            <img src="assets/imgs/office_icon.png"/>
+                         </li>
+                     </ul>
+                </div>
+                <div class="container_text_icons_about_us">
+                    <ul>
+                        <li id="textStats">
+                            <p>STATS</p>
+                        </li>
+                        <li id="textWhatWeDo">
+                            <p>WHAT WE DO</p>
+                        </li>
+                        <li id="textTeam">
+                            <p>TEAM</p>
+                        </li>
+                        <li id="textOffice">
+                            <p>OFFICE</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div><!--ends main content container for ABOUT US-->
+
+    <!-- jquery -->
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <!-- bootstrap js -->
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+    <!--custom js scripts -->
+    <script src="assets/js/submenu.js"></script>
+    <script src="assets/js/about_us_icons.js"></script>
+    <script src="assets/js/scroll_main_pages.js"></script>
 </body>
 </html>

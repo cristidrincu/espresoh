@@ -1,0 +1,145 @@
+body{
+    background-color: #7f7f7f;
+    /*hide scrollbar*/
+    overflow: hidden;
+}
+
+ul{
+    margin:0;
+    padding: 0;
+    list-style: none;
+}
+
+p{
+    font-family: 'Raleway', sans-serif;
+}
+
+.clearFloats{
+    clear:both;
+}
+
+div#home_page_container{
+    margin-bottom: 100px;
+}
+
+.container_preloader{
+    width:100%;
+    height:10px;
+    background-color: #940d06;
+}
+
+.logo_container {
+    width:220px;
+    height: 38px;
+}
+
+.logo_position_home, .logo_position_about_us{
+    margin-top: 265px;
+    margin-bottom: 37px;
+}
+
+.logo_position_about_us{
+    margin-bottom: 20px;
+}
+
+p.text_home{
+    font-size:86px;
+    line-height: 100px;
+    color:#fff;
+}
+
+p.text_about_us{
+    font-size: 56px;
+    color:#fff;
+}
+
+.container_teaser_home{
+
+}
+
+.container_teaser_about_us{
+
+}
+
+.container_arrow_nav{
+    text-align:center;
+    padding-top: 160px;
+}
+
+.container_main_menu{
+    width:100px;
+    margin-top: 280px;
+    border-left: 1px solid #fff;
+    padding-left: 10px;
+    position: fixed;
+}
+
+.containerSubMenu{
+    width:100px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    margin-top: 7px;
+    margin-bottom: 10px;
+}
+
+.containerSubMenu ul {
+    margin-left: 6px;
+}
+
+.container_main_menu ul li a{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* about us styles */
+div#about_us_page_container{
+    margin-bottom: 180px;
+}
+
+div.container_icons_about_us{
+    margin-top: 50px;
+}
+
+div.container_icons_about_us ul, div.container_icons_about_us ul li{
+    display: inline-block;
+}
+
+div.container_icons_about_us ul li{
+    width:144px;
+    height: 144px;
+    margin-right: 15px;
+}
+
+div.container_icons_about_us ul li:hover{
+    cursor: pointer;
+}
+
+div.container_icons_about_us ul li p {
+    display: none;
+}
+
+li#toggleStatsText, li#toggleWhatWeDoText, li#toggleTeamText, li#toggleOfficeText{
+    text-align: center;
+}
+
+div.container_text_icons_about_us ul, div.container_text_icons_about_us ul li{
+    display:inline-block;
+}
+
+div.container_text_icons_about_us ul li{
+    width:144px;
+    text-align: center;
+    margin-right: 15px;
+}
+
+div.container_text_icons_about_us ul li p{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    color: #fff;
+    margin-top: 15px;
+    margin-bottom: 50px;
+    display:none;
+}

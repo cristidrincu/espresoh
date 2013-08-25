@@ -1,0 +1,19 @@
+div.containerTextPhotoGallery{
+    width: 860px;
+    height: 472px;
+    margin-left: 80px;
+    margin-top: 230px;
+    padding-top: 155px;
+    background-color: #000;
+    opacity:0.5;
+    filter:alpha(opacity=40); /* For IE8 and earlier */
+}
+
+div.containerTextPhotoGallery p{
+    font-family: 'Raleway', sans-serif;
+    font-size: 38px;
+    font-weight: 300;
+    color:#fff;
+    line-height: 35px;
+    margin-left: 100px;
+}

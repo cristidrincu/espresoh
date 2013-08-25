@@ -1,7 +1,7 @@
 body{
     background-color: #7f7f7f;
     /*hide scrollbar*/
-    overflow: hidden;
+   overflow: hidden;
 }
 
 ul{
@@ -39,6 +39,10 @@ div#home_page_container{
 }
 
 .logo_position_about_us{
+    margin-top: 250px;
+}
+
+.logo_position_about_us{
     margin-bottom: 20px;
 }
 
@@ -51,6 +55,19 @@ p.text_home{
 p.text_about_us{
     font-size: 56px;
     color:#fff;
+}
+
+p.text_careers{
+    font-size: 56px;
+    color:#fff;
+    font-weight:300;
+}
+
+p.text_contact{
+    font-size: 56px;
+    color:#fff;
+    font-weight:300;
+    line-height: 65px;
 }
 
 .container_teaser_home{
@@ -74,7 +91,7 @@ p.text_about_us{
     position: fixed;
 }
 
-.containerSubMenu{
+.containerSubMenu, .containerSubMenuCareers{
     width:100px;
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
@@ -83,7 +100,7 @@ p.text_about_us{
     margin-bottom: 10px;
 }
 
-.containerSubMenu ul {
+.containerSubMenu ul, .containerSubMenuCareers ul{
     margin-left: 6px;
 }
 
@@ -94,9 +111,9 @@ p.text_about_us{
     text-decoration: none;
 }
 
-/* about us styles */
+/* ABOUT US STYLES */
 div#about_us_page_container{
-    margin-bottom: 180px;
+    margin-bottom: 160px;
 }
 
 div.container_icons_about_us{
@@ -107,7 +124,7 @@ div.container_icons_about_us ul, div.container_icons_about_us ul li{
     display: inline-block;
 }
 
-div.container_icons_about_us ul li{
+div.container_icons_about_us ul li, div.container_icons_careers ul li{
     width:144px;
     height: 144px;
     margin-right: 15px;
@@ -125,21 +142,98 @@ li#toggleStatsText, li#toggleWhatWeDoText, li#toggleTeamText, li#toggleOfficeTex
     text-align: center;
 }
 
-div.container_text_icons_about_us ul, div.container_text_icons_about_us ul li{
+div.container_text_icons_about_us ul, div.container_text_icons_about_us ul li, div.container_text_icons_careers ul, div.container_text_icons_careers ul li, div.container_icons_contact ul, div.container_icons_contact ul li{
     display:inline-block;
 }
 
-div.container_text_icons_about_us ul li{
+div.container_text_icons_about_us ul li, div.container_text_icons_careers ul li, div.container_icons_contact ul li{
     width:144px;
     text-align: center;
     margin-right: 15px;
 }
 
-div.container_text_icons_about_us ul li p{
+div.container_text_icons_about_us ul li p, div.container_text_icons_careers ul li p{
     font-family: 'Open Sans', sans-serif;
     font-weight: 600;
     color: #fff;
     margin-top: 15px;
     margin-bottom: 50px;
     display:none;
+}
+
+/*CAREERS STYLES*/
+div#careers_page_container{
+    margin-top: 160px;
+    margin-bottom: 160px;
+}
+
+div.container_icons_careers{
+    margin-top: 60px;
+}
+
+div.container_icons_careers ul li{
+    cursor: pointer;
+}
+
+div.container_text_icons_careers ul li p{
+    display:inline-block;
+}
+
+div.container_icons_careers ul, div.container_icons_careers ul li{
+    display: inline-block;
+}
+
+div.container_form_upload_cv{
+    margin-top: 0;
+}
+
+div.container_form_upload_cv p{
+    color:#fff;
+    font-size: 16px;
+}
+
+input#sendCVInput{
+    width:300px;
+}
+
+button#sendCVButton{
+    background:none;
+    color:#fff;
+}
+
+/*CONTACT STYLES*/
+div#contact_page_container{
+    margin-top: 220px;
+    margin-bottom: 160px;
+}
+div.container_icons_contact{
+    margin-top: 50px;
+    margin-bottom: 60px;
+}
+
+div.container_content_get_in_touch ul, div.container_content_get_in_touch ul li{
+    display: inline-block;
+}
+
+div.container_content_get_in_touch ul li div{
+    width: 340px;
+}
+
+div.container_content_get_in_touch ul li div img{
+    float:left;
+    margin-right: 20px;
+    position: relative;
+    top:-10px;
+}
+
+div.container_content_get_in_touch ul li div p{
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 16px;
+    color: #fff;
+}
+
+div.container_content_get_in_touch ul li div p:nth-child(3){
+    position: relative;
+    top:-10px;
 }

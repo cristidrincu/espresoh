@@ -20,6 +20,7 @@ $(document).ready(function(){
     var benefitsText = $("li#textBenefits p");
     var jobsText = $("li#textJobs p");
 
+
     var toggleText = function(toggler, textElement){
         $(toggler).hover(function(){
             $(textElement).fadeIn("fast").show();
@@ -35,7 +36,7 @@ $(document).ready(function(){
     toggleText($(toggleOfficeText), $(officeText));
 
     //toggle text for careers section
-//    toggleText($(toggleBenefitsText), $(benefitsText));
-//    toggleText($(toggleJobsText), $(jobsText));
+    toggleText($(toggleBenefitsText), $(benefitsText));
+    toggleText($(toggleJobsText), $(jobsText));
 
 });

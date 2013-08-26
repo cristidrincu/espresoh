@@ -1,5 +1,8 @@
 $(document).ready(function(){
 
+    //default scroll top for container home page
+    //$('div#home_page_container').animate({scrollTop:'150px'}, 1200, 'swing');
+
     var closeSubMenu = function(submenu){
             $(submenu).slideUp('fast');
     }
@@ -10,7 +13,7 @@ $(document).ready(function(){
 
    $("a#linkHomeSection").click(function(){
        closeSubMenu($("div.containerSubMenu, div.containerSubMenuCareers"));
-       $('body, html').animate({scrollTop: "100px"}, 1200, "swing");
+       $('body, html').animate({scrollTop: "150px"}, 1200, "swing");
 
    });
 

@@ -1,19 +1,86 @@
-div.containerTextPhotoGallery{
+div.containerPhotoGallery {
     width: 860px;
     height: 472px;
     margin-left: 80px;
     margin-top: 230px;
+    margin-bottom: 45px;
     padding-top: 155px;
     background-color: #000;
     opacity:0.5;
     filter:alpha(opacity=40); /* For IE8 and earlier */
 }
 
-div.containerTextPhotoGallery p{
+div.containerPhotoGallery p{
     font-family: 'Raleway', sans-serif;
     font-size: 38px;
     font-weight: 300;
     color:#fff;
     line-height: 35px;
     margin-left: 100px;
+}
+
+div.containerNavPhotoGallery{
+    width:860px;
+    margin-left: 80px;
+    text-align: center;
+}
+
+div.containerNavPhotoGallery p{
+    font-family: 'Raleway', sans-serif;
+    font-size: 45px;
+    font-weight: 300;
+    color: #fff;
+}
+
+p#titleFirstSection, p#titleSecondSection, p#titleThirdSection{
+   display:none;
+}
+
+div.containerNavPhotoGallery ul, div.containerNavPhotoGallery ul li{
+    display: inline-block;
+}
+
+div.containerNavPhotoGallery ul li{
+    margin-right: 5px;
+}
+
+div.containerNavPhotoGallery ul li:hover{
+    cursor: pointer;
+}
+
+ul.btnsSection1 li, ul.btnsSection2 li, ul.btnsSection3 li{
+    width:10px;
+    height:10px;
+}
+
+li.inactiveSectionButton, li.activeSectionButton {
+    width:10px;
+    height: 10px;
+    background: url('/assets/imgs/icon_red_inactive_section_photos.png');
+}
+
+li.activeSectionButton{
+    background-image: url('/assets/imgs/icon_red_active_section_photos.png');
+}
+
+li.inactiveSectionButton{
+    background-image: url('/assets/imgs/icon_red_inactive_section_photos.png');
+}
+
+li.activeSection{
+    background-image: url('/assets/imgs/icon_white_active_photo_section.png');
+}
+
+li.inactiveSection{
+    background-image: url('/assets/imgs/icon_white_inactive_photo_section.png');
+}
+
+div.containerPhotos1stFloor{
+    display: none;
+}
+
+img.galleryImage{
+    position: relative;
+    top:-110px;
+    left: 40px;
 }

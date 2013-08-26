@@ -1,7 +1,7 @@
 body{
     background-color: #7f7f7f;
     /*hide scrollbar*/
-   overflow: hidden;
+   /*overflow: hidden;*/
 }
 
 ul{
@@ -22,11 +22,11 @@ div#home_page_container{
     margin-bottom: 100px;
 }
 
-.container_preloader{
-    width:100%;
-    height:10px;
-    background-color: #940d06;
-}
+/*.container_preloader{*/
+    /*width:100%;*/
+    /*height:10px;*/
+    /*background-color: #940d06;*/
+/*}*/
 
 .logo_container {
     width:220px;
@@ -134,9 +134,9 @@ div.container_icons_about_us ul li:hover{
     cursor: pointer;
 }
 
-div.container_icons_about_us ul li p {
-    display: none;
-}
+/*div.container_icons_about_us ul li p, div.container_text_icons_careers ul li p {*/
+    /*display: none;*/
+/*}*/
 
 li#toggleStatsText, li#toggleWhatWeDoText, li#toggleTeamText, li#toggleOfficeText{
     text-align: center;
@@ -161,6 +161,10 @@ div.container_text_icons_about_us ul li p, div.container_text_icons_careers ul l
     display:none;
 }
 
+div.container_text_icons_careers ul li p{
+    margin-bottom: 0;
+}
+
 /*CAREERS STYLES*/
 div#careers_page_container{
     margin-top: 160px;
@@ -171,20 +175,24 @@ div.container_icons_careers{
     margin-top: 60px;
 }
 
+div.container_text_icons_careers ul li{
+    height:16px;
+}
+
 div.container_icons_careers ul li{
     cursor: pointer;
 }
 
-div.container_text_icons_careers ul li p{
-    display:inline-block;
-}
+/*div.container_text_icons_careers ul li p{*/
+    /*display:inline-block;*/
+/*}*/
 
 div.container_icons_careers ul, div.container_icons_careers ul li{
     display: inline-block;
 }
 
 div.container_form_upload_cv{
-    margin-top: 0;
+    margin-top: 50px;
 }
 
 div.container_form_upload_cv p{

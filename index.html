@@ -20,6 +20,8 @@
     <!--custom css and javascript files-->
     <link rel="stylesheet" href="assets/css/styles.css"/>
     <link rel="stylesheet" href="assets/css/styles_office_photo_gallery.css"/>
+    <link rel="stylesheet" href="assets/css/styles_careers_sub_section_jobs.css"/>
+    <link rel="stylesheet" href="assets/css/styles_about_us_stats.css"/>
 </head>
 <body>
     <!-- preloader container -->
@@ -68,7 +70,7 @@
                                 <div class="containerSubMenuCareers">
                                     <ul>
                                         <li><a href="#">Benefits</a></li>
-                                        <li><a href="#">Jobs</a></li>
+                                        <li><a id="jobsButton" href="#">Jobs</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -126,6 +128,138 @@
                     </ul>
                 </div>
             </div>
+            <!-- STATS SUB-SECTION STARTS HERE ------------>
+            <div id="statsContainer" class="col-lg-10">
+                <div class="teaser_text_stats">
+                    <p class="text_stats_icons">A bit of what we like and</p>
+                    <p class="text_stats_icons">do in numbers.</p>
+                </div>
+                <div class="container_icons_stats">
+                    <div class="double_icon_set_animation" id="boys_girls">
+                        <div class="top_icon">
+                            <img src="assets/imgs/icon_stats_boys.png"/>
+                        </div>
+                        <div class="middle_icon" id="boys_girls_animation">
+                            <div class="container_top_circle" id="top_circle_boys">
+                                <img src="assets/imgs/icons_animations/boys_girls/top_icon.png"/>
+                            </div>
+                            <div class="container_middle_circle" id="middle_circle_boys">
+                                <p class="stats_section_identifier" id="team_identifier">Team</p>
+                                <img id="elipse_common" src="assets/imgs/icons_animations/elipse_common.png" />
+                            </div>
+                            <div class="container_bottom_circle" id="bottom_circle_boys">
+                                <img src="assets/imgs/icons_animations/boys_girls/bottom_icon.png"/>
+                            </div>
+                        </div>
+                        <div class="bottom_icon">
+                            <img src="assets/imgs/icon_stats_girls.png"/>
+                        </div>
+                    </div>
+                    <div class="double_icon_set_animation" id="frontend_backend">
+                        <div class="top_icon">
+                            <img src="assets/imgs/icon_stats_backend.png"/>
+                        </div>
+                        <div class="middle_icon" id="frontend_backend_animation">
+                            <div class="container_top_circle" id="top_circle_backend">
+                                <img src="assets/imgs/icons_animations/backend_frontend/top_icon.png"/>
+                            </div>
+                            <div class="container_middle_circle" id="middle_circle_backend_frontend">
+                                <p class="stats_section_identifier" id="developers_identifier">Developers</p>
+                                <img id="elipse_common_backend" src="assets/imgs/icons_animations/elipse_common.png" />
+                            </div>
+                            <div class="container_bottom_circle" id="bottom_circle_frontend">
+                                <img src="assets/imgs/icons_animations/backend_frontend/bottom_icon.png"/>
+                            </div>
+                        </div>
+                        <div class="bottom_icon">
+                            <img src="assets/imgs/icon_stats_frontend.png"/>
+                        </div>
+                    </div>
+                    <div class="double_icon_set_animation" id="vehicles">
+                        <div class="top_icon">
+                            <img src="assets/imgs/icon_stats_bike.png"/>
+                        </div>
+                        <div class="middle_icon" id="bikes_cars_animation">
+                            <div class="container_top_circle" id="top_circle_vehicles">
+                                <img src="assets/imgs/icons_animations/vehicles/top_icon.png"/>
+                            </div>
+                            <div class="container_middle_circle" id="middle_circle_vehicle">
+                                <p class="stats_section_identifier" id="vehicles_identifier">Vehicles</p>
+                                <img id="elipse_common_vehicles" src="assets/imgs/icons_animations/elipse_common.png" />
+                            </div>
+                            <div class="container_bottom_circle" id="bottom_circle_vehicles">
+                                <img src="assets/imgs/icons_animations/vehicles/bottom_icon.png"/>
+                            </div>
+                        </div>
+                        <div class="bottom_icon">
+                            <img src="assets/imgs/icons_stats_car.png"/>
+                        </div>
+                    </div>
+                    <div class="double_icon_set_animation" id="soda_coffee">
+                        <div class="top_icon">
+                            <img src="assets/imgs/icon_stats_soda_can.png"/>
+                        </div>
+                        <div class="middle_icon" id="soda_coffee_animation">
+                            <div class="container_top_circle" id="top_circle_soda_coffee">
+                                <img src="assets/imgs/icons_animations/cofee_soda/top_icon.png"/>
+                            </div>
+                            <div class="container_middle_circle" id="middle_circle_soda_coffee">
+                                <p class="stats_section_identifier" id="coffee_soda_identifier">Coffee&amp;Soda</p>
+                                <img id="elipse_common_coffee_soda" src="assets/imgs/icons_animations/elipse_common.png" />
+                            </div>
+                            <div class="container_bottom_circle" id="bottom_circle_soda_coffee">
+                                <img src="assets/imgs/icons_animations/cofee_soda/bottom_icon.png"/>
+                            </div>
+                        </div>
+                        <div class="bottom_icon">
+                            <img src="assets/imgs/icon_stats_coffee.png"/>
+                        </div>
+                    </div>
+                    <div class="double_icon_set_animation" id="food">
+                        <div class="top_icon">
+                            <img src="assets/imgs/icon_stats_croissants.png"/>
+                        </div>
+                        <div class="middle_icon" id="croissants_fruits_animation">
+                            <div class="container_top_circle" id="top_circle_food">
+                                <img src="assets/imgs/icons_animations/food/top_icon.png"/>
+                            </div>
+                            <div class="container_middle_circle" id="middle_circle_food">
+                                <p class="stats_section_identifier" id="food_identifier">Croissants&amp;Fruits</p>
+                                <img id="elipse_common_food" src="assets/imgs/icons_animations/elipse_common.png" />
+                            </div>
+                            <div class="container_bottom_circle" id="bottom_circle_food">
+                                <img src="assets/imgs/icons_animations/food/bottom_icon.png"/>
+                            </div>
+                        </div>
+                        <div class="bottom_icon">
+                            <img src="assets/imgs/icon_stats_fruits.png"/>
+                        </div>
+                    </div>
+                    <div class="double_icon_set_animation" id="work_play">
+                        <div class="top_icon">
+                            <img src="assets/imgs/icon_stats_working_hours.png"/>
+                        </div>
+                        <div class="middle_icon" id="working_playing_animation">
+                            <div class="container_top_circle" id="top_circle_work_play">
+                                <img src="assets/imgs/icons_animations/work_play/top_icon.png"/>
+                            </div>
+                            <div class="container_middle_circle" id="middle_circle_work_play">
+                                <p class="stats_section_identifier" id="work_play_identifier">Hours at the office</p>
+                                <img id="elipse_work_play" src="assets/imgs/icons_animations/elipse_common.png" />
+                            </div>
+                            <div class="container_bottom_circle" id="bottom_circle_work_play">
+                                <img src="assets/imgs/icons_animations/work_play/bottom_icon.png"/>
+                            </div>
+                        </div>
+                        <div class="bottom_icon">
+                            <img src="assets/imgs/icon_stats_playing_hours.png"/>
+                        </div>
+                    </div>
+                    <br class="clearFloats"/>
+                </div>
+                <div class="container_counter_stats"></div>
+            </div>
+            <!-- ENDS STATS CONTAINER -------------------->
 
             <!--OFFICE SUB SECTION STRUCTURE STARTS HERE-->
             <div id="officePhotoGalleryContainer">
@@ -184,7 +318,7 @@
     <!-- main content container CAREERS------------------>
     <div class="container" id="careers_page_container">
         <div class="row">
-            <div class="col-lg-10">
+            <div class="col-lg-10" id="careers_parent">
                 <div class="teaser_text container_teaser_careers">
                     <p class="text_careers">If you've ever wanted to be part of our team in a real project, just contact us.</p>
                 </div>
@@ -214,18 +348,50 @@
                         <button id="sendCVButton" type="submit" class="btn btn-default">SEND CV</button>
                     </form>
                 </div>
-
-                <!------------------------------------------------>
-                <!-------JOBS SUB-SECTION STARTS HERE------------->
-                <div class="teaser_text container_teaser_jobs">
-                     <p class="text_jobs">
-                         We are always looking for passionate
-                         and energetic software or iOS developers.
-                         Apply for an open position!
-                     </p>
-                </div>
-                <!-------JOBS SUB-SECTION ENDS HERE--------------->
             </div>
+            <!------------------------------------------------>
+            <!-------JOBS SUB-SECTION STARTS HERE------------->
+            <div id="jobs_container" class="col-lg-10">
+                <div class="teaser_text container_teaser_jobs">
+                    <p class="text_jobs">
+                        We are always looking for passionate
+                    </p>
+                    <p class="text_jobs">and energetic software or iOS developers.</p>
+                    <p class="text_jobs">
+                        Apply for an open position!
+                    </p>
+                </div>
+                <div class="container_jobs">
+                    <ul>
+                        <li>
+                            <div>
+                                <img src="assets/imgs/icon_mac_jobs.png" />
+                                <p class="job_title">Junior iOS Developer</p>
+                                <p>Timisoara</p>
+                                <br class="clearFloats"/>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <img src="assets/imgs/icon_backend_developer_jobs.png"/>
+                                <p class="job_title">Back-End Developer</p>
+                                <p>Timisoara</p>
+                                <br class="clearFloats"/>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="container_form_subscriber_jobs">
+                    <p>Join our contact list</p>
+                    <form class="form-inline" name="subscribe_mailing_list" method="post" action="" role="form">
+                        <div class="form-group">
+                            <label class="sr-only" for="emailAddress">Email address</label><!-- for screen readers-->
+                            <input id="emailAddress" type="text" class="form-control" placeholder="Email"/>
+                        </div>
+                        <button id="sendEmail" type="submit" class="btn btn-default">JOIN</button>
+                    </form>
+                </div>
+            </div><!-------JOBS SUB-SECTION ENDS HERE--------------->
          </div>
     </div><!--ends main content container for CAREERS-->
 
@@ -277,8 +443,12 @@
     <script src="assets/js/submenu.js"></script>
     <script src="assets/js/about_us_icons.js"></script>
     <script src="assets/js/scroll_main_pages.js"></script>
+    <!------------------ABOUT US SCRIPTS-------------------->
     <script src="assets/js/about_us_sub_pages.js"></script>
+    <script src="assets/js/about_us_stats.js"></script>
     <script src="assets/js/office_photo_gallery.js"></script>
+    <!-------------------CAREERS SCRIPTS-------------------->
     <script src="assets/js/careers_sub_pages.js"></script>
+
 </body>
 </html>

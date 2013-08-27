@@ -183,10 +183,6 @@ div.container_icons_careers ul li{
     cursor: pointer;
 }
 
-/*div.container_text_icons_careers ul li p{*/
-    /*display:inline-block;*/
-/*}*/
-
 div.container_icons_careers ul, div.container_icons_careers ul li{
     display: inline-block;
 }

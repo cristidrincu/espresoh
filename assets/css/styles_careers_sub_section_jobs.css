@@ -1,0 +1,63 @@
+div#jobs_container{
+    /*margin-top: 160px;*/
+    margin-bottom: 135px;
+}
+
+div.container_teaser_jobs{
+    margin-bottom: 80px;
+}
+
+p.text_jobs{
+    font-family: 'Raleway';
+    font-size: 45px;
+    font-weight: 300;
+    color:#fff;
+}
+
+
+
+div.container_jobs ul, div.container_jobs ul li{
+    display:inline-block;
+}
+
+div.container_jobs ul li{
+    width:300px;
+}
+
+div.container_jobs ul li img{
+    float:left;
+    margin-right: 18px;
+    position: relative;
+    top:-10px;
+}
+
+div.container_jobs ul li p, div.container_jobs ul li p.job_title{
+    font-family: 'Open Sans';
+    font-weight: 600;
+    color:#fff;
+}
+
+div.container_jobs ul li p:nth-child(3){
+    font-weight: 300;
+    position: relative;
+    top:-7px;
+}
+
+div.container_form_subscriber_jobs{
+    margin-top: 50px;
+}
+
+div.container_form_subscriber_jobs p{
+    color:#fff;
+    font-size: 16px;
+}
+
+input#emailAddress{
+    width:300px;
+}
+
+button#sendEmail{
+    width: 140px;
+    background:none;
+    color:#fff;
+}

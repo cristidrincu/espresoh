@@ -13,8 +13,7 @@ $(document).ready(function(){
 
    $("a#linkHomeSection").click(function(){
        closeSubMenu($("div.containerSubMenu, div.containerSubMenuCareers"));
-       $('body, html').animate({scrollTop: "150px"}, 1200, "swing");
-
+       $('body, html').animate({scrollTop: "90px"}, 1200, "swing");
    });
 
     $("a#triggerSubMenu, img#arrow_nav_home_page").click(function(){

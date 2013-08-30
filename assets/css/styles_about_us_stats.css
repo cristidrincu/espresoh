@@ -1,5 +1,5 @@
 div#statsContainer{
-    margin-top: 250px;
+    margin-top: 390px;
     margin-bottom: 250px;
 }
 
@@ -80,51 +80,74 @@ div#top_circle_backend, div#bottom_circle_frontend, div#top_circle_vehicles, div
 }
 
 div#top_circle_backend{
-    top:-50px;
+    /*top:-50px; use this positioning for debugging purposes - the element is hidden and its position is offset by default*/
+    position: absolute;
+    top:300px;
     left: 53px;
+    display:none;
+    opacity: 0.1;
 }
 
 div#bottom_circle_frontend{
+    position: absolute;
     top:135px;
     left:48px;
+    display:none;
+    opacity: 0.1;
 }
 
 div#top_circle_vehicles{
+    position: absolute;
     top:-50px;
     left:62px;
+    display:none;
 }
 
 div#bottom_circle_vehicles{
+    position: absolute;
+    display: none;
     top:138px;
     left:61px;
 }
 
 div#top_circle_soda_coffee{
+    position: absolute;
+    display: none;
     top:-50px;
     left:48px;
 }
 
 div#bottom_circle_soda_coffee{
+    position: absolute;
+    display: none;
     top:138px;
     left:42px;
 }
 
 div#top_circle_food{
+    position: absolute;
+    display: none;
     top: -50px;
     left:46px;
 }
 
 div#bottom_circle_food{
+    position: absolute;
+    display: none;
     top:138px;
     left:61px;
 }
 
 div#top_circle_work_play{
+    position: absolute;
+    display: none;
     top:-50px;
     left:41px;
 }
 
 div#bottom_circle_work_play{
+    position: absolute;
+    display: none;
     top:138px;
     left:30px;
 }
@@ -137,10 +160,10 @@ p.stats_section_identifier{
     color:#fff;
 }
 
-img#elipse_common{
+img#elipse_common, img#elipse_common_backend, img#elipse_common_vehicles, img#elipse_common_coffee_soda, img#elipse_common_food, img#elipse_work_play{
     width:50px;
     height:47px;
-    /*display:none;*/
+    display:none;
 }
 
 p#team_identifier{
@@ -152,17 +175,20 @@ p#team_identifier{
 p#developers_identifier{
    left:35px;
    top:65px;
+   display:none;
 }
 
 p#vehicles_identifier{
     left:45px;
     top:65px;
+    display:none;
 }
 
 p#coffee_soda_identifier, p#food_identifier, p#work_play_identifier{
     font-size: 16px;
     left:40px;
     top:72px;
+    display:none;
 }
 
 p#food_identifier{

@@ -21,16 +21,29 @@
     <link rel="stylesheet" href="assets/css/styles.css"/>
     <link rel="stylesheet" href="assets/css/styles_office_photo_gallery.css"/>
     <link rel="stylesheet" href="assets/css/styles_careers_sub_section_jobs.css"/>
+
+    <link rel="stylesheet" href="assets/css/styles_about_us_what_we_do.css"/>
     <link rel="stylesheet" href="assets/css/styles_about_us_stats.css"/>
+
 </head>
 <body>
     <!-- preloader container -->
-    <div class="container_preloader">
-
+    <!--<div id="html5Loader"></div>-->
+    <div id="preloader">
+        <div id="status">&nbsp;</div>
     </div>
+
+    <div id="background_video">
+        <video id="video_background" autoplay="true" loop="true">
+            <source src="movies/04.mansarda.mp4" type="video/mp4">
+        </video>
+        <!--hide all other videos here -->
+    </div>
+
 
     <!-- main content container HOME PAGE-->
     <div class="container" id="home_page_container">
+
         <div class="row">
             <!-- MAIN SECTIONS LOGO AND TEXT CONTAINER-->
             <!-- HOME SECTION-->
@@ -69,13 +82,13 @@
                                 <a id="triggerSubMenuCareers" href="#careers">CAREERS</a>
                                 <div class="containerSubMenuCareers">
                                     <ul>
-                                        <li><a href="#">Benefits</a></li>
+                                        <li><a id="benefitsButton" href="#">Benefits</a></li>
                                         <li><a id="jobsButton" href="#">Jobs</a></li>
                                     </ul>
                                 </div>
                             </div>
                         </li>
-                        <li><a id="linkContactSection" class="activeLinkMainMenu" href="#">CONTACT</a></li>
+                        <li><a id="linkContactSection" href="#">CONTACT</a></li>
                     </ul>
                 </div>
             </div>
@@ -261,6 +274,102 @@
             </div>
             <!-- ENDS STATS CONTAINER -------------------->
 
+            <!-- WHAT WE DO CONTAINER STARTS HERE ------->
+            <div id="parent_container_what_we_do" class="col-lg-10">
+                <div class="container_text_timeline">
+                    <p>We started the recruitment,<p>
+                    <p>prospecting the project and drawing the </p>
+                    <p>architecture.</p>
+                </div>
+                <div id="whatWeDoContainer" class="col-lg-10">
+                    <div class="containerDatesTimeline" id="march2012_may2012">
+                        <p class="text_month_large"><strong>MARCH</strong> 2012</p>
+                        <a id="startImageMarch2012" href="#start"><img class="starting_image_timeline" src="assets/imgs/links_timeline/march_2012_large.png"/></a>
+                        <div class="container_line_segment"><img src="assets/imgs/links_timeline/line_segment_common.png"/></div>
+                        <a id="endImageMay2012" href="#may2012_august2012"><img class="ending_image_timeline" src="assets/imgs/links_timeline/month_small.png"/></a>
+                        <p class="text_month_small">MAY 2012</p>
+                        <br class="clearFloats"/>
+                    </div>
+                    <div class="containerDatesTimeline" id="may2012_august2012">
+                        <!--<p id="text_month_small_may_2012"><strong>MAY</strong> 2012</p>-->
+                            <!--<a id="startImageMay2012" href="#may2012"><img class="ending_image_timeline" src="assets/imgs/links_timeline/month_small.png"/></a>-->
+                                <div class="container_line_segment"><img src="assets/imgs/links_timeline/line_segment_common.png"/></div>
+                            <a id="endImageAugust2012" href="#august2012"><img class="ending_image_timeline" src="assets/imgs/links_timeline/month_small.png"/></a>
+                            <br class="clearFloats"/>
+                        <p class="text_month_small">AUGUST 2012</p>
+                        <br class="clearFloats"/>
+                    </div>
+                    <div class="containerDatesTimeline" id="august2012_september2012">
+                        <p class="text_month_large">AUGUST 2012</p>
+                        <a id="startImageAugust2012" href="#august2012"><img class="starting_image_timeline" src="assets/imgs/links_timeline/march_2012_large.png"/></a>
+                        <div class="container_line_segment"><img src="assets/imgs/links_timeline/line_segment_common.png"/></div>
+                        <a id="endImageSeptember2012" href="#september2012"><img class="ending_image_timeline" src="assets/imgs/links_timeline/month_small.png"/></a>
+                        <!--<p class="text_month_small">SEPTEMBER 2012</p>-->
+                    </div>
+                    <div class="containerDatesTimeline" id="september2012_october2012">
+                        <p class="text_month_large">SEPTEMBER 2012</p>
+                        <!--<a id="startImageSeptember2012" href="#august2012"><img class="starting_image_timeline" src="assets/imgs/links_timeline/march_2012_large.png"/></a>-->
+                        <div class="container_line_segment"><img src="assets/imgs/links_timeline/line_segment_common.png"/></div>
+                        <a id="endImageOctober2012" href="#september2012"><img class="ending_image_timeline" src="assets/imgs/links_timeline/month_small.png"/></a>
+                        <br class="clearFloats"/>
+                        <p class="text_month_small">OCTOBER 2012</p>
+                    </div>
+                    <div class="containerDatesTimeline" id="october2012_december2012">
+                        <p class="text_month_large">OCTOBER 2012</p>
+                        <a id="startImageOctober2012" href="#august2012"><img class="starting_image_timeline" src="assets/imgs/links_timeline/march_2012_large.png"/></a>
+                        <div class="container_line_segment"><img src="assets/imgs/links_timeline/line_segment_common.png"/></div>
+                        <a id="endImageDecember2012" href="#september2012"><img class="ending_image_timeline" src="assets/imgs/links_timeline/month_small.png"/></a>
+                        <br class="clearFloats"/>
+                        <p class="text_month_small">DECEMBER 2012</p>
+                    </div>
+                    <div class="containerDatesTimeline" id="december2012_january2013">
+                        <p class="text_month_large">DECEMBER 2012</p>
+                        <!--<a id="startImageDecember2012" href="#august2012"><img class="starting_image_timeline" src="assets/imgs/links_timeline/march_2012_large.png"/></a>-->
+                        <div class="container_line_segment"><img src="assets/imgs/links_timeline/line_segment_common.png"/></div>
+                        <a id="endImageJanuary2013" href="#september2012"><img class="ending_image_timeline" src="assets/imgs/links_timeline/month_small.png"/></a>
+                        <br class="clearFloats"/>
+                        <p class="text_month_small">JANUARY 2013</p>
+                    </div>
+                    <div class="containerDatesTimeline" id="january2013_march2013">
+                        <p class="text_month_large">JANUARY 2013</p>
+                        <a id="startImageJanuary2013" href="#august2012"><img class="starting_image_timeline" src="assets/imgs/links_timeline/march_2012_large.png"/></a>
+                        <div class="container_line_segment"><img src="assets/imgs/links_timeline/line_segment_common.png"/></div>
+                        <a id="endImageMarch2013" href="#september2012"><img class="ending_image_timeline" src="assets/imgs/links_timeline/month_small.png"/></a>
+                        <br class="clearFloats"/>
+                        <p class="text_month_small">MARCH 2013</p>
+                    </div>
+                    <div class="containerDatesTimeline" id="march2013_may2013">
+                        <p class="text_month_large">MARCH 2013</p>
+                        <!--<a id="startImageMarch2013" href="#august2012"><img class="starting_image_timeline" src="assets/imgs/links_timeline/march_2012_large.png"/></a>-->
+                        <div class="container_line_segment"><img src="assets/imgs/links_timeline/line_segment_common.png"/></div>
+                        <a id="endImageMay2013" href="#september2012"><img class="ending_image_timeline" src="assets/imgs/links_timeline/month_small.png"/></a>
+                        <br class="clearFloats"/>
+                        <p class="text_month_small">MAY 2013</p>
+                    </div>
+                    <div class="containerDatesTimeline" id="may2013_june2013">
+                        <p class="text_month_large">MAY 2013</p>
+                        <a id="startImageMay2013" href="#august2012"><img class="starting_image_timeline" src="assets/imgs/links_timeline/march_2012_large.png"/></a>
+                        <div class="container_line_segment"><img src="assets/imgs/links_timeline/line_segment_common.png"/></div>
+                        <a id="endImageJune2013" href="#september2012"><img class="ending_image_timeline" src="assets/imgs/links_timeline/month_small.png"/></a>
+                        <br class="clearFloats"/>
+                        <p class="text_month_small">JUNE 2013</p>
+                    </div>
+                    <div class="containerDatesTimeline" id="june2013_back_button">
+                        <p class="text_month_large">JUNE 2013</p>
+                        <!--<a id="startImageJune2013" href="#august2012"><img class="starting_image_timeline" src="assets/imgs/links_timeline/march_2012_large.png"/></a>-->
+                        <div class="container_line_segment"><img src="assets/imgs/links_timeline/line_segment_common.png"/></div>
+                        <a id="endImageBackBtn" href="#september2012"><img class="ending_image_timeline" src="assets/imgs/links_timeline/month_small.png"/></a>
+                        <br class="clearFloats"/>
+                        <p class="text_month_small">Back</p>
+                    </div>
+                    <br class="clearFloats"/>
+                </div>
+            </div>
+            <br><br>
+            <p id="previous_btn">previous</p>
+            <p id="next_btn">next</p>
+            <!-- ENDS WHAT WE DO CONTAINER -------------->
+
             <!--OFFICE SUB SECTION STRUCTURE STARTS HERE-->
             <div id="officePhotoGalleryContainer">
                 <div class="containerPhotoGallery">
@@ -439,6 +548,9 @@
     <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
     <!-- bootstrap js -->
     <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+
+    <script src="assets/js/video_espresoh.js"></script>
+
     <!--custom js scripts -->
     <script src="assets/js/submenu.js"></script>
     <script src="assets/js/about_us_icons.js"></script>
@@ -446,9 +558,19 @@
     <!------------------ABOUT US SCRIPTS-------------------->
     <script src="assets/js/about_us_sub_pages.js"></script>
     <script src="assets/js/about_us_stats.js"></script>
+    <script src="assets/js/about_us_what_we_do.js"></script>
     <script src="assets/js/office_photo_gallery.js"></script>
     <!-------------------CAREERS SCRIPTS-------------------->
     <script src="assets/js/careers_sub_pages.js"></script>
 
+    <!-- Preloader -->
+    <script type="text/javascript">
+        //<![CDATA[
+        $(window).load(function() { // makes sure the whole site is loaded
+            $("#status").fadeOut(); // will first fade out the loading animation
+            $("#preloader").delay(350).fadeOut("slow"); // will fade out the white DIV that covers the website.
+        })
+        //]]>
+    </script>
 </body>
 </html>
